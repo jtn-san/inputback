@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/* @import url(https://fonts.googleapis.com/css2?family=Eater&display=swap); */
+
+
+@font-face{
+    font-family: ext;
+    src:url(Fontes/TimesRoman.otf);
+}
+
+@font-face{
+    font-family: ext2;
+    src:url(Fontes/Basketball.otf);
+}
+
+@font-face{
+    font-family: ext3;
+    src:url(Fontes/BodoniXT.ttf);
+}
+
+/* BOTÃO SUBIR AO TOPO */
+
+html{
+    scroll-behavior: smooth;
+} 
+
+body {
+    background: url(../../img/fundos_site.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+/* section {
+    height: 300vh;
+    background-image: linear-gradient(red, blue);
+} */
+
+/* .topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 100px;
+    background-color: #000; 
+    text-decoration: none; 
+    z-index: 1000;
+}
+.topo::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue; 
+    transition: margin-top 450ms;
+}
+.topo:hover::after {
+    margin-top:-15px;
+} */
+
+
+.logo{
+    width: 70px;
+    height: 40px;
+}
+
+p{
+    font-family: 'ext';
+    padding: 0px 20px 0px 20px;
+    text-shadow:  0.1em 0.1em 0.1em whitesmoke;
+    /* text-indent: 20px; */
+}
+
+/*img{
+    border-radius: 15px 0px 15px 0px;
+    border-bottom: 3px solid black;
+}*/
+
+/* h2 PARA TÍTULOS */
+h2{
+    text-align: center;
+    font-family: 'ext3';
+    font: 10px, bold;
+    border-bottom: 1px solid black;
+    color: black;
+    border-radius: 15px 0px 15px 0px;
+    margin-top: 5px;
+    text-shadow: 0.2em 0.5em 0.1em gold,
+        0.4em -0.3em 0.1em goldenrod,
+        1px 1px white, -1px -1px #444;
+}
+
+.navbar{
+background: goldenrod;
+}
+
+
+/* RODAPÉ */
+.rodape{
+    clear: both;
+    border: 3px solid goldenrod;
+    /* margin-bottom: -16px; */
+}
+
+.img-fluid{
+    margin-bottom: -16px;
+}
+
+.imgtopo{
+    margin-top: -17px;
+    margin-bottom: -4px;
+}
+.imgtopo2{
+    margin-top: -17px;
+    margin: auto;
+    border: double;
+   
+}
+
+h5{
+    text-align: center;
+}
+
+/* PÁGINA EVENTOS*/
+
+#section1{
+    height: auto;
+    background-color: goldenrod;
+  }
+  
+#section2{
+    height: auto;
+    background-color: gray;
+}
+
+
+p.logo_roda img{
+    padding: 0%;
+    border: 2px dotted rgba(132, 0, 150, 0.308);
+
+}
+
+/* Botão Neon Página Sub Units */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.teste_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    height: 10vh;
+    /*background: #050801;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+a.neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;  
+}
+a.neon:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.333));
+}
+a.neon:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a.neon:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a.neon span{
+    position: absolute;
+    display: block;
+}
+a.neon span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a.neon span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a.neon span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+a.neon span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+.rod{
+    margin-top: 150px;
+}
+/* fim do código */
+
+/* GALERIA */
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 40%;
+    -moz-column-width: 40%;
+    column-width: 40%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;}
+    }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
+    }
+
+
+    /* PÁGINA CONTATO */
+form{
+    width: auto;
+    margin: auto;
+    position: relative;
+}
+
+legend{
+    color:black;
+    padding: 3px;
+    font-weight: bold;
+    border-style: double;
+    text-align: center;
+}
+
+fieldset{
+    border: 2px double pink;
+    padding: 10px;
+    border-width: thin;
+    box-shadow: 5px 5px #888888;    
+}
+
+.back_gg{
+    background: url(../../img/SNSD-Girls-Generation-World-Tour-Girls-&-Peace.jpg), url(../../img/SNSD-Girls-Generation-World-Tour-Girls-&-Peace.jpg);
+    background-position: center top, bottom;
+    background-repeat: repeat, repeat; 
+    background-size: auto;
+    overflow: auto;
+
+}
+
+
+/* ..... */
+
+.disc {
+    background-image: url(../../img/fundogg.png), url(../../img/fundogg.png);
+    background-position: left, right bottom;
+    background-repeat: no-repeat, right repeat;
+    padding: 15px; 
+}
+
+/* img.cd0{
+    margin-left: 250px;
+    padding: 30px; 
+}*/
+img.cd1, img.cd2{
+    display: inline-block;
+    position: relative;
+    height: auto;
+/*     margin-left: 20px; */
+} 
+
+section.troca{
+    position: relative;
+    display: inline-block; 
+    width: 300px;
+    height: 350px;
+}
+
+img.cd1, .cd2{
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.cd1, .cd2:hover{
+    opacity:1;
+}
+
+.cd1:hover, .cd2{
+    opacity: 0;
+}
+
+/* BOTÃO SCROLL */
+
+#topo{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/*BOTÃO RESPONSIVO*/
+
+.btn-responsive{
+    white-space: normal;
+    Word-wrap: break-Word;
+}
+
+
+/* MAIS INFORMAÇÕES */
+
+.more_info {
+    border-bottom: 1px dotted;
+    position: relative;
+}
+  
+.more_info .title {
+      position: absolute;
+      top: 20px;
+      background: silver;
+      padding: 4px;
+      left: 0;
+      word-wrap: break-word;
+}
+
+table{
+    word-wrap: break-word; 
+}
+
+
+/* TROCA DAS CORES DO PADRÕES DO BOOTSTRAP */
+
+.btn-info{color:rgb(0, 0, 0);background:pink;border-color:rgba(225, 103, 255, 0.548)}
+
+.btn-info:hover{color:black;background-image: url(../../img/btn_snsd.gif);border-color:#e688e6}
+
+.btn-danger:hover{color:#fff;background-image: url(../../img/btn_snsd_danger.gif);border-color:#e688e6}
+
+
