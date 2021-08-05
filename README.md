@@ -4,4 +4,4 @@
 
 SENAC - Curso Técnico de Informática - Projeto Front-End.
 
-Develops Igor Jordão, Jonthan Santos e Paloma Kimberly
+Develops Igor Jordão, Jonathan Santos e Paloma Kimberly
